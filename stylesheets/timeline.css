@@ -65,6 +65,16 @@
   letter-spacing: 2px;
 }
 
+.timeline::before {
+  content: "";
+  position: absolute;
+  height: 98%;
+  width: 2px;
+  left: 0%;
+  transform: translateY(1%);
+  background-color: var(--body-text-colour);
+}
+
 @media (min-width: 768px) {
   .timeline::before {
     content: "";
