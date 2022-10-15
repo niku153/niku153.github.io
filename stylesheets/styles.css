@@ -200,7 +200,7 @@ h3 {
 
 .project-description p {
   color: var(--body-text-colour);
-  font-weight: lighter;
+  font-weight: 200;
   line-height: 1.8em;
 }
 
@@ -231,9 +231,11 @@ h3 {
 .form-wrapper {
   -webkit-animation: fadeIn 2s;
 }
-.form-wrapper h2 {
+.form-wrapper h1 {
   margin-top: 100px;
   text-align: center;
+  color: var(--heading-text-colour);
+  font-size: 50px;
 }
 
 form {
@@ -302,7 +304,6 @@ form {
 }
 
 .form-wrapper button {
-  /* float:right; */
   padding: 15px 20px;
   border-radius: 5px;
   border: 1px solid var(--secondary-body-text-colour);
@@ -353,7 +354,6 @@ form {
   .homepage-hero {
     text-align: center;
     padding: 180px 100px 140px 100px;
-    /* justify-content: space-evenly; */
     margin: 0 auto;
   }
 
@@ -393,6 +393,8 @@ form {
 
   .nav-ul.show {
     display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   .hamburger {
@@ -419,6 +421,7 @@ form {
 
   .project-description p {
     font-size: 15px;
+    font-weight: 200;
   }
 
   .project-description .fa-brands {
