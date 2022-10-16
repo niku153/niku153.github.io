@@ -3,14 +3,14 @@
   --body-font-family: "Poppins", sans-serif;
   --body-text-colour: #dbdbdb;
   --secondary-body-text-colour: #82919b;
-
+  --background-colour: #1f2933;
   --heading-text-colour: #9aa5b1;
   --accent-colour: #f2c7a1;
 }
 
 html {
   box-sizing: border-box;
-  background-color: #1f2933;
+  background-color: var(--background-colour);
   scroll-behavior: smooth;
   max-width: 1260px;
   margin: 0 auto;
@@ -37,7 +37,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: var(--body-font-family);
-  background-color: #1f2933;
+  background-color: var(--background-colour);
   z-index: 1;
   height: 10vh;
 }
@@ -75,7 +75,7 @@ nav ul li a {
   font-size: 12px;
   letter-spacing: 3px;
   font-weight: bold;
-  background-color: #1f2933;
+  background-color: var(--background-colour);
 }
 
 nav ul li.active a {
@@ -92,8 +92,8 @@ nav ul li.active a {
 /* header styling */
 
 h1,
-h2 {
-  color: var(--heading-text-colour);
+h2,
+h3 {
   font-family: var(--heading-font-family);
 }
 
@@ -105,6 +105,7 @@ h1 {
 
 h2 {
   font-size: 64px;
+  color: var(--heading-text-colour);
 }
 
 h3 {
@@ -213,6 +214,7 @@ h3 {
 .project-description .project-link-container {
   margin-top: 40px;
 }
+
 .project-description .project-link {
   text-decoration: none;
   color: var(--secondary-body-text-colour);
@@ -260,7 +262,7 @@ form {
   width: 100%;
   padding: 20px;
   border: 1px solid var(--body-text-colour);
-  background-color: #1f2933;
+  background-color: var(--background-colour);
   border-radius: 5px;
   outline: none;
   color: var(--body-text-colour);
@@ -290,7 +292,7 @@ form {
   font-size: 0.8em;
   font-weight: bold;
   padding: 0 10px;
-  background: #1f2933;
+  background: var(--background-colour);
   border-left: 1px solid var(--accent-colour);
   border-right: 1px solid var(--accent-colour);
   letter-spacing: 0.2em;
@@ -309,7 +311,7 @@ form {
   border: 1px solid var(--secondary-body-text-colour);
   font-size: 18px;
   color: var(--secondary-body-text-colour);
-  background-color: #1f2933;
+  background-color: var(--background-colour);
   text-transform: uppercase;
   letter-spacing: 0.3em;
 }
@@ -330,11 +332,11 @@ form {
   }
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 1200px) {
   h1 {
-    line-height: 1.5;
     font-size: 60px;
-    color: var(--accent-colour);
   }
 
   h2 {
@@ -342,24 +344,25 @@ form {
   }
 
   h3 {
-    color: var(--body-text-colour);
     font-size: 30px;
-    font-weight: 300;
   }
 
-  .homepage-hero .portrait {
-    display: none;
-  }
+  /* HOMEPAGE */
 
   .homepage-hero {
     text-align: center;
-    padding: 180px 100px 140px 100px;
     margin: 0 auto;
   }
 
   .hero-container {
     text-align: center;
   }
+
+  .homepage-hero .portrait {
+    display: none;
+  }
+
+  /* PROJECTS */
 
   .project-item {
     display: block;
@@ -388,7 +391,7 @@ form {
     display: none;
     width: 100%;
     flex-direction: column;
-    background-color: #1f2933;
+    background-color: var(--background-colour);
   }
 
   .nav-ul.show {
@@ -401,6 +404,8 @@ form {
     display: block;
   }
 
+  /* ABOUT */
+
   .about-container p {
     max-width: 600px;
   }
@@ -408,6 +413,8 @@ form {
   .about-container h3 {
     margin-top: 50px;
   }
+
+  /* PROJECTS */
 
   .project-item .project-description {
     width: 300px;
@@ -421,7 +428,6 @@ form {
 
   .project-description p {
     font-size: 15px;
-    font-weight: 200;
   }
 
   .project-description .fa-brands {
@@ -451,10 +457,14 @@ form {
     font-size: 30px;
   }
 
+  /* HOMEPAGE */
+
   .homepage-hero {
     padding: 120px 20px 50px 20px;
     height: 50vh;
   }
+
+  /* ABOUT */
 
   .about-container h2 {
     margin-top: 50px;
@@ -474,16 +484,17 @@ form {
     margin-bottom: 0;
   }
 
+  /* PROJECTS */
+
   .projects h2 {
     margin-top: 30px;
+    text-align: center;
   }
+
+  /* FORM */
 
   .form-item {
     width: 300px;
     left: -20px;
-  }
-
-  .projects h2 {
-    text-align: center;
   }
 }
