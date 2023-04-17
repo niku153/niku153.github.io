@@ -91,6 +91,12 @@
     width: 50%;
     margin-bottom: 50px;
     position: relative;
+    border: 1px solid #1f2933;
+    transition: 0.2s ease-in-out;
+  }
+
+  .timeline ul li:hover {
+    border: 1px solid #f2c7a189;
   }
   .timeline ul li:nth-child(odd) {
     float: left;
@@ -103,7 +109,7 @@
     float: right;
     clear: left;
     transform: translateX(40px);
-    border-radius: 0px 1px 10px 10px;
+    border-radius: 0px 10px 10px 10px;
   }
 
   .timeline ul li::after {
@@ -114,6 +120,7 @@
     background-color: var(--body-text-colour);
     border-radius: 50%;
     top: 0;
+    transition: 0.2s ease-in-out;
   }
 
   .timeline ul li:nth-child(odd)::after {
