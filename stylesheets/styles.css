@@ -37,7 +37,7 @@ nav {
   flex-wrap: wrap;
   font-family: var(--body-font-family);
   background-color: var(--background-colour);
-  z-index: 1;
+  z-index: 10;
   height: 10vh;
 }
 
@@ -71,9 +71,9 @@ nav ul li a {
   padding: 10px 20px;
   text-decoration: none;
   color: var(--body-text-colour);
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 3px;
-  font-weight: bold;
+  font-weight: normal;
   background-color: var(--background-colour);
 }
 
@@ -83,7 +83,7 @@ nav ul li.active a {
 }
 
 .logo {
-  width: 50px;
+  width: 75px;
   margin-left: 7px;
   margin-top: 7px;
 }
@@ -100,6 +100,7 @@ h1 {
   line-height: 1.5;
   font-size: 96px;
   color: var(--accent-colour);
+  font-weight: 300;
 }
 
 h2 {
@@ -114,25 +115,54 @@ h3 {
 }
 
 .homepage-hero {
-  background-color: #323f4b;
-  text-align: left;
-  padding: 180px 100px 140px 100px;
+  /* background-color: #323f4b; */
+  /* text-align: left; */
+  padding: 20px 75px 20px 75px;
   -webkit-animation: fadeIn 2s;
   border-radius: 8px;
+  /* border: 1px solid #323f4b; */
+  margin-top: 100px;
 }
 
 .hero-container {
-  text-align: left;
+  /* text-align: left; */
+  /* position: relative; */
 }
 
 .homepage-hero .portrait {
-  display: inline;
   border-radius: 20px;
   max-width: 400px;
-  float: right;
+  border: 15px solid var(--accent-colour);
+}
+
+.homepage-hero .hero-text {
+  text-align: right;
+  z-index: 1;
+}
+
+.homepage-hero .hero-text h1 {
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+}
+
+.homepage-hero .hero-text h3 {
+  margin: 0;
+}
+
+.homepage-hero .hero-text p {
+  color: var(--heading-text-colour);
+  letter-spacing: 0.1em;
+  font-weight: 200;
 }
 
 /* about section styling  */
+
+.about-container {
+  /* border: 1px solid #323f4b; */
+  border-radius: 8px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
 
 .about-container h2 {
   text-align: center;
@@ -145,6 +175,7 @@ h3 {
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
+  border: 10px solid var(--heading-text-colour);
 }
 
 .about-container p {
@@ -157,6 +188,14 @@ h3 {
 
 .about-container h3 {
   text-align: center;
+}
+
+hr {
+  margin: 50px 50px;
+  height: 5px;
+  background: #323f4b;
+  border: none;
+  border-radius: 8px;
 }
 
 /* Projects styling */
@@ -231,6 +270,7 @@ h3 {
 
 .form-wrapper {
   -webkit-animation: fadeIn 2s;
+  /* padding: 20px 75px 20px 75px; */
 }
 .form-wrapper h1 {
   margin-top: 100px;
@@ -277,7 +317,7 @@ form {
   pointer-events: none;
   font-size: 18px;
   color: var(--body-text-colour);
-  text-transform: uppercase;
+  text-transform: lowercase;
   transition: 0.3s;
   letter-spacing: 0.5em;
 }
@@ -311,7 +351,7 @@ form {
   font-size: 18px;
   color: var(--secondary-body-text-colour);
   background-color: var(--background-colour);
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.3em;
 }
 
@@ -401,6 +441,11 @@ form {
 
   .hamburger {
     display: block;
+    margin-right: 10px;
+  }
+
+  .logo {
+    margin-left: 10px;
   }
 
   /* ABOUT */
