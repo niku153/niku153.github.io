@@ -263,6 +263,11 @@ hr {
   font-size: 30px;
   margin-right: 20px;
   color: var(--secondary-body-text-colour);
+  transition: 0.2s all ease-in-out;
+}
+
+.technology-icons .fa-brands:hover {
+  color: var(--accent-colour);
 }
 
 .project-description .project-link-container {
@@ -275,6 +280,7 @@ hr {
   border: 1px solid var(--secondary-body-text-colour);
   padding: 20px;
   border-radius: 8px;
+  transition: 0.2s all ease-in-out;
 }
 
 .project-description .project-link:hover {
