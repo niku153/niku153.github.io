@@ -39,6 +39,8 @@ nav {
   background-color: var(--background-colour);
   z-index: 10;
   height: 10vh;
+  border-bottom: 1px solid var(--heading-text-colour);
+  padding: 5px;
 }
 
 nav ul {
@@ -105,6 +107,7 @@ h1 {
 
 h2 {
   font-size: 64px;
+  font-weight: 400;
   color: var(--heading-text-colour);
 }
 
@@ -175,7 +178,7 @@ h3 {
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
-  border: 10px solid var(--heading-text-colour);
+  border: 10px solid var(--accent-colour);
 }
 
 .about-container p {
@@ -188,6 +191,19 @@ h3 {
 
 .about-container h3 {
   text-align: center;
+}
+
+.about-container .resume-btn {
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  color: var(--accent-colour);
+}
+
+.about-container .resume-btn:hover {
+  text-decoration: underline;
 }
 
 hr {
@@ -270,7 +286,7 @@ hr {
 
 .form-wrapper {
   -webkit-animation: fadeIn 2s;
-  /* padding: 20px 75px 20px 75px; */
+  padding: 100px 0 0 0;
 }
 .form-wrapper h1 {
   margin-top: 100px;
@@ -395,6 +411,7 @@ form {
 
   .hero-container {
     text-align: center;
+    padding: 100px 0 0 0;
   }
 
   .homepage-hero .portrait {
@@ -505,7 +522,7 @@ form {
 
   .homepage-hero {
     padding: 120px 20px 50px 20px;
-    height: 50vh;
+    /* height: 50vh; */
   }
 
   /* ABOUT */
